@@ -1,0 +1,76 @@
+<ion-content class="ion-padding swiper-no-swiping">
+  <br />
+  <h1 class="ion-text-center logo-white">
+    Cadastrar
+  </h1>
+  <br />
+  <ion-list lines="none">
+    <form>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="text" #email required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Senha</ion-label>
+        <ion-input type="password" #password required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Confirmar Senha</ion-label>
+        <ion-input type="password" #confirmPassword required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Nome</ion-label>
+        <ion-input type="text" #nome required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">CPF</ion-label>
+        <ion-input type="number" #cpf required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="data"> Data Nascimento</ion-label>
+        <ion-datetime displayFormat="DD MM YY" placeholder="01/01/1999"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Celular</ion-label>
+        <ion-input type="number" #data required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="data">Gênero</ion-label>
+        <ion-select>
+          <ion-select-option value="f">Feminino</ion-select-option>
+          <ion-select-option value="m">Masculino</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+    </form>
+  </ion-list>
+  <br />
+  <ion-button
+    ion-item
+    color="dark"
+    fill="outline"
+    shape="round"
+    expand="full"
+    size="medium"
+    type="submit"
+  >
+    Cadastrar
+  </ion-button>
+  <br />
+  <ion-button
+    ion-item
+    color="dark"
+    fill="clear"
+    expand="full"
+    routerLink="/login"
+  >
+    Já sou cadastrado
+  </ion-button>
+</ion-content>
